@@ -491,11 +491,8 @@ video {
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.border-2 {
-  border-width: 2px;
-}
-.border-solid {
-  border-style: solid;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .bg-slate-200 {
   --tw-bg-opacity: 1;
