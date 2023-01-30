@@ -1,13 +1,20 @@
 import React from 'react';
+import { Header } from './components/Header';
+import { Balance } from './components/Header';
+
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-
+  
+  <div>
+    <Header/>
+    <div className="containter"> 
+      <Balance />
     </div>
+  </div>
   );
+  
 }
 
 export default App;
