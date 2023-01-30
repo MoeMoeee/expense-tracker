@@ -13,6 +13,7 @@ function App() {
     <Header/>
     <div className="containter"> 
       <Balance />
+      
       <CalculateExpenses />
     </div>
   </div>
