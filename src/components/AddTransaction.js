@@ -11,7 +11,7 @@ export const AddTransaction = () => {
   }
 
   return (
-    <div className='max-w-sm mx-auto mt-4'>
+    <div className='max-w-sm mx-auto mt-10'>
       <div className='text-center text-lg font-bold border-l-0 border-r-0 border-t-0 border-solid border border-gray-400'>Add Transaction</div>
       <div>
         <div className='mt-5'>
