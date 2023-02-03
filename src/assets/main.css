@@ -490,11 +490,11 @@ video {
 .mr-8 {
   margin-right: 2rem;
 }
-.mb-4 {
-  margin-bottom: 1rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .flex {
   display: flex;
