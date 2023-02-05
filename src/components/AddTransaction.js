@@ -7,7 +7,6 @@ export const AddTransaction = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // searchText(text);
   }
 
   return (
