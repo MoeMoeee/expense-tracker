@@ -15,11 +15,7 @@ export const Transaction = ({transaction}) => {
               </svg>
           </button>
         </div>
-
       </>
-        
-
-
     )
   }
 
