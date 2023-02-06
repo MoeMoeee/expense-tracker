@@ -13,15 +13,13 @@ function App() {
   <GlobalProvider>
     <Header/>
     <div className="containter"> 
-      <Balance />
-      <CalculateExpenses />
-      <TransactionHistory />
-      <AddTransaction />
-      
+      <Balance/>
+      <CalculateExpenses/>
+      <TransactionHistory/>
+      <AddTransaction/>
     </div>
   </GlobalProvider>
   );
-  
 }
 
 export default App;
