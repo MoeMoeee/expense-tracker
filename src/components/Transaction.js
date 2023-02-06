@@ -6,9 +6,7 @@ export const Transaction = ({transaction}) => {
 
   const activateDelete =() => {
     deleteTransaction(transaction.id);
-    // document.getElementById(transaction.id).remove();
   }
-
 
   if (transaction.amount > 0) {
     return (
@@ -16,7 +14,6 @@ export const Transaction = ({transaction}) => {
         <div id={transaction.id} className="mb-2 pl-4 flex grow text-white font-medium border-2 border-none bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:bg-cyan-600 rounded-md">{transaction.text}
           <span className='ml-auto mr-3'>
             ${transaction.amount}
-
           </span>
           <button class="inline-flex items-center px-2 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-sm" onClick={activateDelete}>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
