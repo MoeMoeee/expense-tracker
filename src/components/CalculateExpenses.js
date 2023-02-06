@@ -12,9 +12,8 @@ export const CalculateExpenses = () => {
         .reduce((acc, item) => (acc+=item), 0)
         .toFixed(2);
 
-    const expense = -(total - income);
-
-    const finalExpense = expense.toFixed(2);
+    const expense = total - income;
+    const finalExpense = Math.abs(expense).toFixed(2);
 
 
   return (
