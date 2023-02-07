@@ -11,10 +11,11 @@ export const AddTransaction = () => {
     e.preventDefault();
 
     const newTransaction = {
-      id: setCount(count + 1),
+      id: count,
       text, 
       amount: parseInt(amount)
     }
+    
     addTransaction(newTransaction);
   }
 
@@ -46,7 +47,7 @@ export const AddTransaction = () => {
             </div>
 
             <div className='text-center'>
-              <button className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">
+              <button onClick={() => setCount({ count: count + 1 })} className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">
                     Add Transaction
               </button>
             </div>

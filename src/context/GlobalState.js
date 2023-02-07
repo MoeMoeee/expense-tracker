@@ -25,6 +25,9 @@ export const GlobalProvider = ({children}) => {
             type: 'ADD',
             payload: transaction
         });
+
+        console.log(transaction.id);
+
     }
 
     return (
