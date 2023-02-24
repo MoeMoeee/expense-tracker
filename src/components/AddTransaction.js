@@ -21,32 +21,32 @@ export const AddTransaction = () => {
 
   return (
     // allow to input the transaction type
-    <div className='max-w-sm mx-auto mt-10'>
-      <div className=' text-center text-2xl font-bold border-l-0 border-r-0 border-t-0 border-solid border border-gray-400'>Add Transaction</div>
+    <div className='max-w-lg mx-auto mt-10'>
+      <div className=' text-center text-2xl font-bold border-l-0 border-r-0 border-t-0 border-solid border border-gray-500 pb-4'>Add Transaction</div>
       <div>
         {/* the transaction type */}
         <div className='mt-5 '>
-          <span className='font-bold text-lg'>Transaction Type:</span>  
+          <span className='font-bold text-xl'>Transaction Type:</span>  
         </div>
 
         {/*  create the form to input transaction type */}
-        <div className='max-w-sm rounded overflow-hidden my-5 mx-auto'>
-          <form onSubmit={onSubmit} className="w-full max-w-sm">
+        <div className='max-w-lg rounded overflow-hidden my-5 mx-auto'>
+          <form onSubmit={onSubmit} className="w-full max-w-lg">
             <div className="flex items-center border-b-2 border-teal-500 py-2">
-              <input onChange={e => setText(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Enter the transaction type..." />
+              <input onChange={e => setText(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="E.g. grocery, salary..." />
             </div>
             
             {/* transaction amount */}
             <div className='mt-8'>
-              <span className='font-bold text-lg'>Amount: {"\n"}</span>
-              <span className='font-bold text-lg'>
+              <span className='font-bold text-xl '>Amount: {"\n"}</span>
+              <span className='font-bold text-xl'>
                 (Positive is Income, Negative is Expense)
               </span>
             </div>
 
 
             {/*  create the form to input transaction type */}
-            <div className='max-w-sm rounded overflow-hidden my-5 mx-auto'>
+            <div className='max-w-lg rounded overflow-hidden my-5 mx-auto'>
               <div className="flex items-center border-b-2 border-teal-500 py-2">
                 <input onChange={e => setAmount(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Enter the amount..." />
               </div>
