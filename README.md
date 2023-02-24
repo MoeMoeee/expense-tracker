@@ -1,6 +1,6 @@
 # Expense Tracker App
 
-This app builds with HTML, Tailwind CSS, Javascript and React.
+This app builds with HTML, Tailwind CSS, Javascript and React. This app offers CRUD functions with user-friendly design.
 
 ![Alt text](public/Expense-tracker.png?raw=true "Expense Tracker App")
 
