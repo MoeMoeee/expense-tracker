@@ -2,9 +2,8 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <>
-    <div className="font-bold text-center text-3xl">Track Your Expenses</div>
+    <>nter
+    <h1 className="mt-3 font-bold text-center text-5xl">Track Your Expenses</h1>
     </>
-
   )
 }

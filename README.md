@@ -2,7 +2,6 @@
 
 This app uses HTML, Tailwind CSS to style the components and React to build the user-interface.
 
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

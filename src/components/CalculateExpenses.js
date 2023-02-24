@@ -18,16 +18,16 @@ export const CalculateExpenses = () => {
   return (
     <div className='max-w-xs mx-auto flex justify-center bg-gray-300 p-5 space-x-2 m-5 shadow-gray-50 rounded-lg'>
         <div className='mr-8 flex'>
-            <h4 className='font-bold'>INCOME
-            <div className='flex justify-center  font-bold rounded-lg text-green-700 text-lg'>
+            <h4 className='font-extrabold text-lg'>INCOME
+            <div className='flex justify-center font-extrabold rounded-lg text-green-700 text-lg'>
                 ${income}
             </div>
             </h4>
         </div>
 
         <div className='mx-auto flex'>
-            <h4 className='font-bold'>EXPENSE
-            <div className='text-center place-items-center justify-center font-bold text-red-700 text-lg'>
+            <h4 className='font-extrabold text-lg'>EXPENSE
+            <div className='text-center place-items-center justify-center font-extrabold text-red-700 text-lg'>
                 ${finalExpense}
             </div>
             </h4>
