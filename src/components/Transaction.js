@@ -4,7 +4,7 @@ import { GlobalContext } from '../context/GlobalState';
 export const Transaction = ({transaction}) => {
   const {deleteTransaction} = useContext(GlobalContext);
 
-  const activateDelete =() => {
+  const activateDelete = () => {
     deleteTransaction(transaction.id);
   }
 
