@@ -2,6 +2,7 @@
 
 This app builds with HTML, Tailwind CSS, Javascript and React. This app offers CRUD functions with user-friendly design.
 
+Live at: https://expensetrackerforus.netlify.app/
 ![Alt text](public/Expense-tracker.png?raw=true "Expense Tracker App")
 
 # Getting Started with Create React App
