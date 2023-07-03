@@ -1,46 +1,31 @@
 {
   "name": "expense-tracker",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "backend for expense tracker",
+  "main": "server.js",
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "start": "node server",
+    "server": "nodemon server"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoeMoeee/expense-tracker.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Khoa Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoeMoeee/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/MoeMoeee/expense-tracker#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "netlify-cli": "^13.0.0",
-    "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.2.4"
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
   }
 }
