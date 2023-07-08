@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 
+
 export const AddTransaction = () => {
   const [text, setText] = useState('');
   const [count, setCount] = useState(0);
