@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState';
+import { numberWithCommas } from '../utils/format';
+
 
 export const Transaction = ({transaction}) => {
   const {deleteTransaction} = useContext(GlobalContext);
@@ -14,7 +16,7 @@ export const Transaction = ({transaction}) => {
         <div id={transaction._id} className="pl-4 flex grow text-white font-medium border-2.5 border-none bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:bg-cyan-600 rounded-md">
           <span className='pt-1.5'>{transaction.text}</span>
           <span className='pt-1.5 ml-auto mr-3'>
-            ${transaction.amount}
+            ${numberWithCommas(transaction.amount)}
           </span>  
 
           {/* delete button */}
@@ -33,7 +35,7 @@ export const Transaction = ({transaction}) => {
     <div className='mb-1'>
       <div id={transaction._id} className='pl-4 flex grow  text-white font-medium border-2 border-none bg-red-400 hover:bg-red-500 shadow-lg shadow-cyan-500/50 rounded-md'>
         <span className='pt-1.5'>{transaction.text}</span>
-        <span className='pt-1.5 ml-auto mr-3'>-${Math.abs(transaction.amount)}</span>
+        <span className='pt-1.5 ml-auto mr-3'>-${Math.abs(numberWithCommas(transaction.amount))}</span>
 
         {/* delete button */}
         <button class="inline-flex items-center px-2 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-sm" onClick={activateDelete}>
