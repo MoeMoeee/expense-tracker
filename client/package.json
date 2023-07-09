@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
+    "start": "npm run watch:css && react-scripts --openssl-legacy-provider start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -44,5 +44,5 @@
     "tailwindcss": "^3.2.4"
   },
 
-  "proxy": "http://localhost:3000"
+  "proxy": "http://localhost:2000/"
 }
