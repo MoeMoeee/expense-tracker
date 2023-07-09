@@ -5,13 +5,13 @@ export const Transaction = ({transaction}) => {
   const {deleteTransaction} = useContext(GlobalContext);
 
   const activateDelete = () => {
-    deleteTransaction(transaction.id);
+    deleteTransaction(transaction._id);
   }
 
   if (transaction.amount > 0) {
     return (
       <div className='mb-1'>
-        <div id={transaction.id} className="pl-4 flex grow text-white font-medium border-2.5 border-none bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:bg-cyan-600 rounded-md">
+        <div id={transaction._id} className="pl-4 flex grow text-white font-medium border-2.5 border-none bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:bg-cyan-600 rounded-md">
           <span className='pt-1.5'>{transaction.text}</span>
           <span className='pt-1.5 ml-auto mr-3'>
             ${transaction.amount}
@@ -31,7 +31,7 @@ export const Transaction = ({transaction}) => {
   else {
     return (
     <div className='mb-1'>
-      <div id={transaction.id} className='pl-4 flex grow  text-white font-medium border-2 border-none bg-red-400 hover:bg-red-500 shadow-lg shadow-cyan-500/50 rounded-md'>
+      <div id={transaction._id} className='pl-4 flex grow  text-white font-medium border-2 border-none bg-red-400 hover:bg-red-500 shadow-lg shadow-cyan-500/50 rounded-md'>
         <span className='pt-1.5'>{transaction.text}</span>
         <span className='pt-1.5 ml-auto mr-3'>-${Math.abs(transaction.amount)}</span>
 
