@@ -12,7 +12,7 @@ export const Transaction = ({transaction}) => {
 
   if (transaction.amount > 0) {
     return (
-      <div className='mb-1'>
+      <div className='mb-1 sm: ml-3 sm: mr-3'>
         <div id={transaction._id} className="pl-4 flex grow text-white font-medium border-2.5 border-none bg-cyan-500 shadow-lg shadow-cyan-500/50 hover:bg-cyan-600 rounded-md">
           <span className='pt-1.5'>{transaction.text}</span>
           <span className='pt-1.5 ml-auto mr-3'>
@@ -32,7 +32,7 @@ export const Transaction = ({transaction}) => {
 
   else {
     return (
-    <div className='mb-1'>
+    <div className='mb-1 sm: ml-3 sm: mr-3'>
       <div id={transaction._id} className='pl-4 flex grow  text-white font-medium border-2 border-none bg-red-400 hover:bg-red-500 shadow-lg shadow-cyan-500/50 rounded-md'>
         <span className='pt-1.5'>{transaction.text}</span>
         <span className='pt-1.5 ml-auto mr-3'>-${Math.abs(numberWithCommas(transaction.amount))}</span>

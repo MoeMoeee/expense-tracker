@@ -27,27 +27,26 @@ export const AddTransaction = () => {
       <div>
         {/* the transaction type */}
         <div className='mt-5 '>
-          <span className='font-bold text-xl'>Transaction Type:</span>  
+          <span className='font-bold text-xl sm: ml-3 sm: mr-3'>Transaction Type:</span>  
         </div>
 
         {/*  create the form to input transaction type */}
         <div className='max-w-lg rounded overflow-hidden my-5 mx-auto'>
           <form onSubmit={onSubmit} className="w-full max-w-lg">
-            <div className="flex items-center border-b-2 border-teal-500 py-2">
+            <div className="sm: ml-3 sm: mr-3 flex items-center border-b-2 border-teal-500 py-2">
               <input onChange={e => setText(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="E.g. grocery, salary..." />
             </div>
             
             {/* transaction amount */}
-            <div className='mt-8'>
-              <span className='font-bold text-xl '>Amount: {"\n"}</span>
-              <span className='font-bold text-xl'>
-                (Positive is Income, Negative is Expense)
-              </span>
+            <div className='mt-8 flex sm: ml-3 sm: mr-3'>
+              <div className="mt-8">
+                <span className="font-bold text-xl sm:ml-3 sm:mr-3">Amount: (Positive is Income, Negative is Expense) </span>
+              </div>
             </div>
 
 
             {/*  create the form to input transaction type */}
-            <div className='max-w-lg rounded overflow-hidden my-5 mx-auto'>
+            <div className='sm: ml-3 sm: mr-3 max-w-lg rounded overflow-hidden my-5 mx-auto'>
               <div className="flex items-center border-b-2 border-teal-500 py-2">
                 <input onChange={e => setAmount(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Enter the amount..." />
               </div>
