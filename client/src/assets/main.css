@@ -478,6 +478,9 @@ video {
 .mt-5 {
   margin-top: 1.25rem;
 }
+.ml-3 {
+  margin-left: 0.75rem;
+}
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -501,9 +504,6 @@ video {
 }
 .mb-1 {
   margin-bottom: 0.25rem;
-}
-.ml-3 {
-  margin-left: 0.75rem;
 }
 .ml-auto {
   margin-left: auto;
@@ -755,6 +755,14 @@ video {
   outline-offset: 2px;
 }
 @media (min-width: 640px) {
+
+  .sm\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .sm\:mr-3 {
+    margin-right: 0.75rem;
+  }
 
   .sm\:text-3xl {
     font-size: 1.875rem;

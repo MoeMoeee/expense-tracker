@@ -39,9 +39,7 @@ export const AddTransaction = () => {
             
             {/* transaction amount */}
             <div className='mt-8 flex sm: ml-3 sm: mr-3'>
-              <div className="mt-8">
                 <span className="font-bold text-xl sm:ml-3 sm:mr-3">Amount: (Positive is Income, Negative is Expense) </span>
-              </div>
             </div>
 
 
