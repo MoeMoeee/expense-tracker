@@ -3,7 +3,8 @@ const tailwindcss = require('tailwindcss');
 module.exports = {
     plugins : [
         tailwindcss('./tailwind.js'),
-        require('autoprefixer')
+        require('autoprefixer'),
+        require('postcss-sort-media-queries')
     ],
 
     extends: {
