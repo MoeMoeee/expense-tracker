@@ -30,6 +30,7 @@
   "devDependencies": {
     "concurrently": "^8.2.0",
     "nodemon": "^2.0.22",
+    "postcss-preset-env": "^9.0.0",
     "postcss-sort-media-queries": "^5.2.0"
   }
 }

@@ -4,7 +4,7 @@ module.exports = {
     plugins : [
         tailwindcss('./tailwind.js'),
         require('autoprefixer'),
-        require('postcss-sort-media-queries')
+        require('postcss-preset-env')({ stage: 0 })
     ],
 
     extends: {
